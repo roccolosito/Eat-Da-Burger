@@ -1,6 +1,6 @@
-use burgers_db;
+USE burgers_db;
 
--- Department Seed
+-- Burgers Seed
 INSERT INTO burgers
     (burger_name, devoured)
 VALUES
