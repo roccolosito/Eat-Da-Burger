@@ -1,11 +1,11 @@
 // Import MySQL connection.
 var connection = require("../config/connection");
 
-selectAll();
+// selectAll();
 
-insertOne();
+// insertOne();
 
-updateOne();
+// updateOne();
 
 
 // Helper function for SQL syntax.
