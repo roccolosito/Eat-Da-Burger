@@ -2,38 +2,38 @@
 
 <h1>Chomp-The-Burger!</h1>
 
-{{!-- <h2>Cats that are not sleepy!</h2> --}}
+<h2>Burgers Ready To Be Chomped!</h2>
 
-{{!-- <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+<ul>
+  {{#each burgers}}
+    {{#unless chomp}}
+      {{> burgers/burger-block chomp=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Chomped Burgers!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if chomp}}
+      {{> burgers/burger-block chomp=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2> --}}
+<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
     <input type="text" id="enterBurger" name="name">
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
+  <div class="form-group">
+    <label for="chomp">To Chomp or Not To Chomp?</label><br>
+    <input type="radio" name="chomp" value="1" checked> Chomped</br>
+    <input type="radio" name="chomp" value="0"> CHOMP!
+  </div>
 
   <button type="submit">Add Burger</button>
 </form>
