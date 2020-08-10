@@ -1,13 +1,6 @@
 // Import MySQL connection.
 var connection = require("../config/connection");
 
-// selectAll();
-
-// insertOne();
-
-// updateOne();
-
-
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
 // In order to write the query, we need 3 question marks.
