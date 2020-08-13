@@ -1,3 +1,12 @@
 * {
-    background-color: lightsalmon;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+img {
+    height: 200px;
+    width: 30%;
 }

@@ -1,28 +1,8 @@
-<img class="img img-thumbnail" src="/assets/img/burger.jpg" alt="Burger image with bite taken out">
+<header>
+  <img class="img img-thumbnail" src="/assets/img/burger.jpg" alt="Burger image with bite taken out">
+  <h1>Chomp-The-Burger!</h1>
+</header>
 
-<h1>Chomp-The-Burger!</h1>
-
-<h2>Burgers Ready To Be Chomped!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless chomp}}
-      {{> burgers/burger-block chomp=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Chomped Burgers!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if chomp}}
-      {{> burgers/burger-block chomp=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -30,10 +10,30 @@
   </div>
 
   <div class="form-group">
-    <label for="chomp">To Chomp or Not To Chomp?</label><br>
+    <label for="chomp"></label><br>
     <input type="radio" name="chomp" value="1" checked> Chomped</br>
     <input type="radio" name="chomp" value="0"> CHOMP!
   </div>
 
   <button type="submit">Add Burger</button>
 </form>
+
+<h2>Burgers Ready To Be Chomped!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#unless chomp}}
+  {{> burgers/burger-block chomp=true}}
+  {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Chomped Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#if chomp}}
+  {{> burgers/burger-block chomp=false}}
+  {{/if}}
+  {{/each}}
+</ul>
