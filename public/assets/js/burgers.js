@@ -27,7 +27,7 @@ $(document).ready(() => {
 
     var newBurger = {
       burger_name: $("#enterBurger").val().trim(),
-      chomp: $("[name=chomp]:checked").val().trim()
+      chomp: $("[name=chomp]:checked").val()
     };
 
     if (newBurger.burger_name) {
