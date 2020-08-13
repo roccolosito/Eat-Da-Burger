@@ -11,7 +11,7 @@ Deployed app via Heroku: https://chomptheburger.herokuapp.com/.
 
 ## Visuals
 
-![TrackerGif](./Assets/burger.gif)
+![BurgerPic](./assets/img/burger.png)
 
 ### Table of Contents
 * [Usage](#Usage)
