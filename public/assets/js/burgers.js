@@ -2,7 +2,7 @@
 $(document).ready(() => {
   $(".change-chomp").on("click", function (event) {
     var id = $(this).data("id");
-    var newChomp = $(this).data("chomp");
+    var newChomp = $(this).attr("chomp");
 
     var newChompState = {
       chomp: newChomp
